@@ -1,15 +1,15 @@
 ## Design patterns
-# Creational
+### Creational
 Singleton
 Prototype
 Builder
 Factory
 
-# Structural
+### Structural
 Facade
 Proxy
 
-# Behavioral
+### Behavioral
 Iterator
 Observer
 Mediator
