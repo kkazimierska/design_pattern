@@ -1,5 +1,3 @@
-# How to pass *args and **kwargs?
-# https://realpython.com/python-kwargs-and-args/
 
 def my_sum(a,b):
     return a + b

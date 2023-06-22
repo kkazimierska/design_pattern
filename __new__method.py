@@ -1,12 +1,21 @@
-# __new__ method
-# https://www.pythontutorial.net/python-oop/python-__new__/
-
 class Person:
     def __init__(self, name):
         self.name = name
 
 person = Person('Kamila')
 
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def __str__(self):
+        return f"The person name is {self.name}."
+
+# Why it does not work?
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def __str__(self):
+        return f"{self.__name__}."
 
 instance_person = object.__new__(Person, 'Maria')
 print(instance_person.__dict__)
@@ -29,23 +38,3 @@ class Person:
 
 person = Person('John')
 
-# super call
-
-class Person:
-    def __new__(cls, first_name, last_name):
-        # create a new object
-        obj = super().__new__(cls)
-
-        # initialize attributes
-        obj.first_name = first_name
-        obj.last_name = last_name
-
-        # inject new attribute
-        obj.full_name = f'{first_name} {last_name}'
-        return obj
-
-
-person = Person('John', 'Doe')
-print(person.full_name)
-
-print(person.__dict__)

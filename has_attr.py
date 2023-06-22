@@ -1,4 +1,3 @@
-# https://www.programiz.com/python-programming/methods/built-in/hasattr
 class Person:
     age = 23
     name = "Adam"
