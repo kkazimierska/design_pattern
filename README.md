@@ -33,8 +33,6 @@ Singleton is used if you need only one instance of the class. It could be a data
 
 2. [Class and object in python](https://www.w3schools.com/python/python_classes.asp)
 
-How to check the instance of the class?
-Super of the self class?
 
 3. [new method tutorial](https://www.pythontutorial.net/python-oop/python-__new__/) explains what is in the new method of the python object. Go to ``__new__ method.py`.
 

@@ -15,7 +15,9 @@ class Person:
     def __init__(self, name):
         self.name = name
     def __str__(self):
-        return f"{self.__name__}."
+        return f"{self.__class__.__name__}:{self.name}"
+    # def __str__(self):
+    #     return f"{self.__name__}"
 
 instance_person = object.__new__(Person, 'Maria')
 print(instance_person.__dict__)
